@@ -15,18 +15,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.nav-item {
+/* .nav-item {
   margin-left: 40px;
 }
 
 .nav-link {
   position: relative;
   right: 400px;
-}
+} */

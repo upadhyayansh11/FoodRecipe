@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container p-2">
+      <div className="container p-1">
         <Link className="navbar-brand" to="/" onClick={closeNavbar}>
           <img
             src="media/images/logo.png"
@@ -37,7 +37,10 @@ function Navbar() {
           id="navbarSupportedContent"
           style={{ width: "80%" }}
         >
-          <ul className="navbar-nav ms-auto mb-lg-0">
+          <ul
+            className="navbar-nav ms-auto mb-lg-0"
+            style={{ marginRight: "300px" }}
+          >
             <li className="nav-item">
               <Link
                 className="nav-link active"
@@ -89,6 +92,9 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          <button className="btn">
+            <b>Download App</b>
+          </button>
         </div>
       </div>
     </nav>

@@ -1,8 +1,5 @@
 import React from "react";
-import "./Hero.css";
-// import AvatarCircles, {
-//   AvatarCirclesDemo,
-// } from "../../components/magicui/avatar-circles";
+import "./Home.css";
 function Hero() {
   return (
     <div
@@ -13,7 +10,7 @@ function Hero() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        // margin: "0",
+
         height: "100vh",
         borderRadius: "50px",
       }}
@@ -43,15 +40,23 @@ function Hero() {
                 style={{
                   width: "15px",
                   display: "inline",
+                  transform: "rotate(-35deg)",
                 }}
                 alt=""
                 src="./media/images/arrow.svg"
               ></img>
             </b>
           </button>
-          <h3 className="fs-4" style={{ marginTop: "330px", color: "white" }}>
-            500+ Recipes
-          </h3>
+          <div className="fs-4" style={{ marginTop: "200px" }}>
+            <img
+              style={{ width: "200px" }}
+              src="./media/images/Avatarcircles.png"
+              alt=""
+            ></img>
+            <h3 className="mt-3" style={{ color: "white" }}>
+              500+ Recipes
+            </h3>
+          </div>
         </div>
         <div className="col-4"></div>
         <div className="col-4" style={{ marginTop: "100px" }}>
@@ -69,22 +74,45 @@ function Hero() {
                 style={{
                   width: "15px",
                   display: "inline",
+                  transform: "rotate(-35deg)",
                 }}
                 alt=""
                 src="./media/images/arrow.svg"
               ></img>
             </b>
           </button>
-          <img
+          <div
+            className="backgroundDiv"
             style={{
+              backgroundImage: `url("./media/images/herodish.jpg")`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "270px",
               borderRadius: "50px",
               marginTop: "190px",
-              // filter: "blur(3px)",
               opacity: "0.5",
             }}
-            alt=""
-            src="./media/images/herodish.jpg"
-          ></img>{" "}
+          >
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <img
+              className="imgg"
+              style={{
+                width: "50px",
+                backgroundColor: "white",
+                padding: "10px",
+                borderRadius: "100%",
+                marginLeft: "10rem",
+                transform: "rotate(-35deg)",
+              }}
+              alt=""
+              src="./media/images/arrow.svg"
+            ></img>
+          </div>
         </div>
       </div>
     </div>

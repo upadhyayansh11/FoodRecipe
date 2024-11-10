@@ -5,6 +5,7 @@ import "./index.css";
 import Navbar from "./Navbar";
 import HomePage from "./landing_page/home/HomePage";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Footer from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,5 +14,6 @@ root.render(
     <Routes>
       <Route path="/" element={<HomePage />} />
     </Routes>
+    <Footer />
   </BrowserRouter>
 );
